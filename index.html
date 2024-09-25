@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="bg.jpg">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="resume mode.html">RESUME</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-dark-mode" style="position: fixed; top: 20px; right: 20px; padding: 10px 20px;"> Dark Mode</button>
+
+        <div class="hero">
+            <h1>Welcome To My Portfolio</h1>
+                <h1 class="nat">Natarajan S</h1>
+            <p class="nat">Web Developer & Designer</p>
+            <a href="#projects" class="btn">View Projects</a></div>
+            <div class="left">
+            <img src="natraj_naveen.jpg" alt="Profile Image" class="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with expertise in creating modern, responsive websites. I love crafting user-friendly and visually appealing designs.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="grid">
+                <div class="project-card">
+                    <h3>Web Traffic Analysis</h3>
+                    <p>A web traffic analysis is a web analytics tools that helps you web site traffic. A web traffic analyser
+                        is a tool that you can use to moniter your web site traffic. Find out how many people are visiting
+                        your website with the help of the web traffic analysis</p>
+                    <a href="#" class="btnn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="text">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btnn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;  Natarajan. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const toggleDarkModeBtn = document.getElementById('toggle-dark-mode');
+        toggleDarkModeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
