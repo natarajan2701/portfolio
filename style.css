@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: cursive;
+    line-height: 1.6;
+    width: 100%;
+    height: auto;
+    background-position: cover;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    padding: 1rem;
+    width: 100%;
+    
+    position: relative;
+    top: -60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    color: #f4b41a;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+header h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f4f4f4;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%; 
+    margin: 40px auto;
+    object-fit: cover;
+    border: 4px solid #f4b41a; 
+}
+
+.btn, .btnn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #f4b41a;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in;
+}
+
+.btn:hover, .btnn:hover {
+    background-color: #f4860b;
+}
+
+#about {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #121212;
+}
+#project-h2{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.project-card p {
+    margin: 10px;
+    color: #555;
+}
+
+.project-card .btn {
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #f4b41a;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #f4860b;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 20px;
+}
+
+footer .social-icons a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #f4b41a;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    footer .social-icons {
+        gap: 15px; /* Reduce gap between icons for smaller screens */
+    }
+
+    footer .social-icons a {
+        font-size: 20px; /* Adjust icon size for smaller screens */
+    }
+
+    footer p {
+        font-size: 14px; /* Reduce font size for footer text on small screens */
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    footer .social-icons {
+        flex-direction: row;
+        gap: 10px; /* Further reduce gap between icons for extra small screens */
+    }
+
+    footer .social-icons a {
+        font-size: 18px; /* Smaller icons for extra small screens */
+    }
+
+    footer p {
+        font-size: 12px; /* Further reduce font size for extra small screens */
+    }
+}
+/* Tablets */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 60px 20px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1.2em;
+    }
+
+    .hero-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn, .btnn {
+        left: 0;
+        top: 0;
+        margin: 20px auto;
+    }
+}
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .hero-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #f4b41a;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #f4860b;
+}
+#about.darkmode{
+    background-color: black;
+    color: white;
+}
+#projects.darkmode{
+    background-color: black;
+    color: white;
+}
+#contact.darkmode{
+    background-color: black;
+    color: white;
+}

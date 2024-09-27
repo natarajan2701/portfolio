@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="resume.html">RESUME</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><button id="toggleMode" style="cursor: pointer; padding: 5px;" >
+                    <i class="fa-solid fa-sun" id="icon-nav"></i></button></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome To My Portfolio</h1>
+                <h1 class="nat">I'm Natarajan S</h1>
+            <p class="nat">Web Developer & Designer</p></div>
+            <div class="left">
+            <img src="natraj_naveen.jpg" alt="Profile Image" class="hero-img">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with 2 years of experience in building responsive, user-friendly, and dynamic websites. My expertise spans across front-end and back-end development, specializing in HTML, CSS, JavaScript. I love transforming creative ideas into functional, visually appealing web applications.
+                With a strong eye for design and detail, I focus on delivering high-quality code that ensures a smooth user experience and high performance. Collaboration is key to my process, and I enjoy working closely with clients and cross-functional teams to bring their vision to life.
+                In addition to coding, I am passionate about continuous learning and staying updated with the latest industry trends and best practices. Whether it’s experimenting with new frameworks or optimizing page performance, I am always eager to grow my skill set.
+                When I’m not coding, I enjoy personal interests,gaming, photography, or blogging about tech.
+                Feel free to check out my portfolio and let’s connect!
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 id="project-h2">My Projects</h2>
+            <div class="grid">
+                <div class="project-card">
+                    <h3>Web Traffic Analysis</h3>
+                    <p>A web traffic analysis is a web analytics tools that helps you web site traffic. A web traffic analyser
+                        is a tool that you can use to moniter your web site traffic. Find out how many people are visiting
+                        your website with the help of the web traffic analysis</p>
+                    <a href="#" class="btnn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="text">Name:</label>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea style="resize: none;" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btnn">submit</button>
+            </form>
+        </div>
+    </section>
+    <button id="scrollToTopBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <footer>
+        <div class="social-icons">
+            <a href="mailto:natarajannaveen2003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/natarajan2701"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100028920799827"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_natraj_naveen_/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/natarajan-s-31b869267/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Natarajan. All Rights Reserved.</p>
+    </footer>
+    
+<script src="index.js"></script>
+</body>
+</html>
